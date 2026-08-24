@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+      font-family: "Open Sans", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.common-button{
+    background-color: #FD6E0A;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    padding:10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 0;
+    
+}
+.logo{
+    font-weight:bold;
+    font-size: 45px;
+
+}
+.logo-r{
+    color:#FD6E0A;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+ 
+
+}
+ul a{
+    text-decoration: none;
+}
+
+/* hero styling */
+.hero-parent-root{
+    background-color: beige;
+    margin-bottom: 100px;
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin:auto;
+}
+.hero-left h2{
+    font-weight: bold;
+    font-size:35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.hero-left p{
+    font-size:20px;
+    font-weight:600;
+
+}
+.outline-button{
+    background-color:white;
+    color:#FD6E0A;
+    font-weight: bold;
+    font-size: 20px;
+    padding:10px 20px;
+    border-radius: 6px;
+    border-color:#FD6E0A ;
+    cursor: pointer;
+
+}
+.btn-par{
+    margin-top: 12px;
+}
+/* Hero section end */
+
+/* About section start */
+
+.about-par{
+    margin-bottom: 80px;
+}
+.about{
+    background-color: beige;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding:75px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    height: 300px;
+}
+.about p{
+    margin: 20px 0
+}
+.box{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.box .subbox{
+    background-color: beige;
+    padding:5px;
+    border-radius: 5px;
+}
+
+/* What i do section */
+.What-i-do-parent{
+
+    text-align: center;
+    margin: 70px auto;
+    padding: 75px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+
+}
+.What-i-do-parent p{
+    margin: 10px 0;
+    padding:5px;
+}
+.What-i-do-container{
+    display:flex;
+    justify-content: space-between;
+    gap:8px;
+}
+ .What-i-do-card{
+    text-align: left;
+    border:2px solid #FD6E0A;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(241, 237, 237);
+}
+ .What-i-do-card p{
+    color: rgb(35, 35, 35);
+ }
+ /* what i do section ended */
+
+
+ /* my amazing section  */
+ .my-amzing-par{
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+        gap: 5px;
+ }
+ .gallery{
+    margin: 20px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px;
+    grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six";
+ }
+ .gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+ .box-1{
+    grid-area: one;
+ }
+ .box-2{
+    grid-area: two;
+ }
+ .box-3{
+    grid-area: three;
+ }
+ .box-4{
+    grid-area: four;
+ }
+ .box-5{
+    grid-area: five;
+ }
+ .box-6{
+    grid-area: six;
+ }
+ /* my amazing section ended */
+
+ /* footer section started */
+
+footer {
+    max-width: 1200px;
+    margin: 80px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 70px;
+
+    background-color: #fff8f3;
+    padding: 70px 60px;
+    border-radius: 24px;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Left side content */
+.footer-left {
+    text-align: left;
+}
+
+footer h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+footer p {
+    padding: 0;
+    max-width: 450px;
+
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Form */
+footer form {
+    padding: 0;
+
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+footer form input,
+footer form textarea {
+    outline: none;
+
+    background-color: #ffffff;
+    border: 1px solid #e8e1dc;
+
+    padding: 14px 16px;
+    border-radius: 10px;
+
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    transition: 0.3s ease;
+}
+
+footer form textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+footer form input:focus,
+footer form textarea:focus {
+    border-color: #b89b88;
+    box-shadow: 0 0 0 4px rgba(184, 155, 136, 0.12);
+}
+
+/* Submit button */
+footer form button {
+    border: none;
+    outline: none;
+
+    padding: 13px 28px;
+    border-radius: 10px;
+
+    background-color: #222;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
